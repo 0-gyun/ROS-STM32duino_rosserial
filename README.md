@@ -8,8 +8,8 @@ I use different enviroment for run rosserial and Upload.
 ### rosserial [1]
 Ubuntu 18.04
 > 1. Install Arudiuno IDE
-> https://websiteforstudents.com/how-to-install-arduino-ide-on-ubuntu-18-04-16-04/
-> **or**.\
+> https://websiteforstudents.com/how-to-install-arduino-ide-on-ubuntu-18-04-16-04/ \
+> **or**\
 > sudo apt-get install arduino
 > 2. Install rosserial 
     sudo apt-get install ros-melodic-rosserial-arduino.\

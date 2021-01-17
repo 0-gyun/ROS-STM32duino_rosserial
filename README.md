@@ -9,7 +9,7 @@ I use different enviroment for run rosserial and Upload.
 Ubuntu 18.04
 > 1. Install Arudiuno IDE
 > https://websiteforstudents.com/how-to-install-arduino-ide-on-ubuntu-18-04-16-04/
-> or
+> **or**
 > sudo apt-get install arduino
 > 2. Install rosserial 
     sudo apt-get install ros-melodic-rosserial-arduino.\
@@ -18,7 +18,8 @@ Ubuntu 18.04
     **Terminal 1**.\
     roscore.\
     **Terminal 2**.\
-    rosrun rosserial_arduino make_libraries.py ..\
+    rosrun rosserial_arduino make_libraries.py .
+  You can see the **ros_lib** folder in your **/Arduino/libraries**
     
     
 ### STM32duino Upload [2]
@@ -30,7 +31,7 @@ Windows 10
 > 3. ros_lib
 >> Downlaod ros_lib
 >> Steckch - Include libaries - Include .Zip libraries and include **ros_lib** folder
->> in my case, I install rosserial in Ubuntu 18.04 and copy the ros_lib folder to Windows arduino (Check install rosserial)
+>> in my case, I install rosserial in Ubuntu 18.04 and copy the ros_lib folder to Windows arduino (Check rosserial)
 
-
-[1] https://github.com/stm32duino
+[1] http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
+[2] https://github.com/stm32duino

@@ -12,13 +12,13 @@ Ubuntu 18.04
 > or
 > sudo apt-get install arduino
 > 2. Install rosserial 
-    sudo apt-get install ros-melodic-rosserial-arduino
-    sudo apt-get install ros-melodic-rosserial
-    cd ~/Arduino/libraries // cd <arduino IDE path>/libraries
-    **Terminal 1**
-    roscore
-    **Terminal 2**
-    rosrun rosserial_arduino make_libraries.py .
+    sudo apt-get install ros-melodic-rosserial-arduino.\
+    sudo apt-get install ros-melodic-rosserial.\
+    cd ~/Arduino/libraries // cd <arduino IDE path>/libraries.\
+    **Terminal 1**.\
+    roscore.\
+    **Terminal 2**.\
+    rosrun rosserial_arduino make_libraries.py ..\
     
     
 ### STM32duino Upload [2]

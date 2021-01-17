@@ -59,7 +59,7 @@ namespace ros
 
 #elif defined(MCU_STM32F103C8)
 
-	typedef NodeHandle_<ArduinoHardware, 5, 5, 2048, 2048> NodeHandle;
+  typedef NodeHandle_<ArduinoHardware, 5, 5, 2048, 2048> NodeHandle;
 
 #else
 

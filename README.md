@@ -3,7 +3,7 @@
 ## Environments Setup
 I use different enviroment for run rosserial and Upload.
 
-    Run rosserial : Ubuntu 18.04 (melodic)\
+    Run rosserial : Ubuntu 18.04 (melodic)
     Upload rosserial aruduino program : Windows
 
 ### rosserial [1]
@@ -14,13 +14,13 @@ Ubuntu 18.04
  sudo apt-get install arduino
  2. Install rosserial 
 
-    sudo apt-get install ros-melodic-rosserial-arduino
-    sudo apt-get install ros-melodic-rosserial
-    cd ~/Arduino/libraries     //     "cd <arduino IDE path>/libraries"
-    **Terminal 1**
-    roscore
-    **Terminal 2**
-    rosrun rosserial_arduino make_libraries.py .
+        sudo apt-get install ros-melodic-rosserial-arduino
+        sudo apt-get install ros-melodic-rosserial
+        cd ~/Arduino/libraries     //     "cd <arduino IDE path>/libraries"
+        Terminal 1
+        roscore
+        Terminal 2
+        rosrun rosserial_arduino make_libraries.py .
     
   You can see the **ros_lib** folder in your **/Arduino/libraries**
     
@@ -41,29 +41,30 @@ Windows 10
  So, I needed to modify ros_lib code to use the STM32duino USB communication.
 
 ### ros_lib - ArduinoHardware.h
-> Insert\
->
+Insert
+
        #elif defined(MCU_STM32F103C8)
        #include <HardwareSerial.h>  // Generic STM32F103C
->       #define SERIAL_CLASS USBSerial
-> and\
->
->        #elif defined(MCU_STM32F103C8)
->        iostream = &Serial;
->       
-> You can find it in ros_lib folder - ArduinoHardware.h\
-> Optionally\
-> You can change the **Baudrate**
->
->        baud_ = 115200
->
-
-### ros_lib - ros.h
-> It isn't essential.
-> But you can change nodes and buffer size by inserting following codes.\
+       #define SERIAL_CLASS USBSerial
+ and
 
         #elif defined(MCU_STM32F103C8)
-        typedef NodeHandle_<ArduinoHardware, 5, 5, 2048, 2048> NodeHandle;
+        iostream = &Serial;
+       
+ You can find it in ros_lib folder - ArduinoHardware.h\
+ Optionally\
+ You can change the **Baudrate**
+
+        baud_ = 115200
+
+
+### ros_lib - ros.h
+ It isn't essential.
+ But you can change nodes and buffer size by inserting following codes.
+
+        #elif defined(MCU_STM32F103C8)
+        
+            typedef NodeHandle_<ArduinoHardware, 5, 5, 2048, 2048> NodeHandle;
 
 
 

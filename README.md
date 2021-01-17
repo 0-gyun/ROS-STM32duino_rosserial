@@ -52,11 +52,9 @@ Insert
         iostream = &Serial;
        
  You can find it in ros_lib folder - ArduinoHardware.h\
- Optionally\
- You can change the **Baudrate**
+ Optionally, You can change the **Baudrate**
 
         baud_ = 115200
-
 
 ### ros_lib - ros.h
  It isn't essential.
@@ -66,7 +64,8 @@ Insert
         
             typedef NodeHandle_<ArduinoHardware, 5, 5, 2048, 2048> NodeHandle;
 
-
+### Upload
+First, You should add the following line at the top of Arduino code(ino) to upload.
 
 
 

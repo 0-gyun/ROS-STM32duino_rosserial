@@ -14,7 +14,7 @@ Ubuntu 18.04
 > 2. Install rosserial 
     sudo apt-get install ros-melodic-rosserial-arduino.\
     sudo apt-get install ros-melodic-rosserial.\
-    cd ~/Arduino/libraries // cd <arduino IDE path>/libraries.\
+    cd ~/Arduino/libraries     //     cd <arduino IDE path>/libraries.\
     **Terminal 1**.\
     roscore.\
     **Terminal 2**.\
